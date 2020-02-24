@@ -67,6 +67,10 @@ public class Polynomial {
 		// FOLLOWING LINE IS A PLACEHOLDER TO MAKE THIS METHOD COMPILE
 		// CHANGE IT AS NEEDED FOR YOUR IMPLEMENTATION
 
+		if(poly1 == null && poly2 == null) {
+			return null;
+		}
+		
 		if (poly1 == null) {
 			Node pointer = poly2.next;
 			Node p2 = new Node(poly2.term.coeff, poly2.term.degree, null);
