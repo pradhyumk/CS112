@@ -37,7 +37,7 @@ public class myTestPurposes {
 
 		ArrayList<Variable> vars = new ArrayList<>(); 
 		ArrayList<Array> arrays = new ArrayList<>();
-		Expression.makeVariableLists("(a + A[a*2-b])", vars, arrays);
+		Expression.makeVariableLists("d*(c-B[a+CARR[0]-A[1]+b])", vars, arrays);
 
 		System.out.print("Enter variable values file name, or hit return if no variables => ");
 		String fname = sc.nextLine();
@@ -51,7 +51,18 @@ public class myTestPurposes {
 		
 		
 		System.out.println(vars+"\n"+arrays);
+	
 		
+		/*
+		StringTokenizer st = new StringTokenizer("d*(c-B[a+CARR[0]-A[1]+b])"," \t*+-/()[]");
+		
+		while(st.hasMoreTokens()) {
+			System.out.println(st.nextToken());
+		}
+		
+		 * [d=0, c=0, a=0, A=0, b=0]
+		 * [B=[ ], CARR=[ ]]
+		 */
 
 	}
 

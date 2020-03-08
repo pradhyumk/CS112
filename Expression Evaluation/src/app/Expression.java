@@ -32,12 +32,14 @@ public class Expression {
 		while (st.hasMoreTokens()) {
 			String token = st.nextToken();
 			if ((expr.indexOf(token) + token.length()) < expr.length()
-					&& expr.charAt(expr.indexOf(token) + token.length()) == '[' && !arrays.contains(new Array(token))) {
+					&& expr.indexOf(token+"[")!=-1 && !arrays.contains(new Array(token))) {
 				arrays.add(new Array(token));
 			} else if (!Character.isDigit(token.charAt(0)) && !vars.contains(new Variable(token))) {
 				vars.add(new Variable(token));
 			}
 		}
+		
+		System.out.println(vars +"\n" + arrays);
 	}
 
 	/**
