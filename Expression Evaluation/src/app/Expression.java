@@ -31,15 +31,14 @@ public class Expression {
 		StringTokenizer st = new StringTokenizer(expr, delims);
 		while (st.hasMoreTokens()) {
 			String token = st.nextToken();
-			if ((expr.indexOf(token) + token.length()) < expr.length()
-					&& expr.indexOf(token+"[")!=-1 && !arrays.contains(new Array(token))) {
+			if ((expr.indexOf(token) + token.length()) < expr.length() && expr.indexOf(token + "[") != -1
+					&& !arrays.contains(new Array(token))) {
 				arrays.add(new Array(token));
 			} else if (!Character.isDigit(token.charAt(0)) && !vars.contains(new Variable(token))) {
 				vars.add(new Variable(token));
 			}
 		}
-		
-		System.out.println(vars +"\n" + arrays);
+		// System.out.println(vars +"\n" + arrays);
 	}
 
 	/**
@@ -125,15 +124,14 @@ public class Expression {
 					}
 
 					inside += cur;
-					System.out.println(inside + " " + k);
-
+					// System.out.println(inside + " " + k);
 				}
-				System.out
-						.println("inside bracket: " + inside.substring(1, inside.length() - 1) + " Entering Recursion");
+				// System.out.println("inside bracket: " + inside.substring(1, inside.length() -
+				// 1) + " Entering Recursion");
 
 				int in = (int) evaluate(inside.substring(1, inside.length() - 1), vars, arrays);
 
-				System.out.println("Exited Recursion (Val: " + in + ")");
+				// System.out.println("Exited Recursion (Val: " + in + ")");
 
 				int[] val = arrays.get(arrays.indexOf(new Array(tmp))).values;
 
@@ -154,34 +152,36 @@ public class Expression {
 					}
 
 					inside += cur;
-					System.out.println(inside + " " + k);
+					// System.out.println(inside + " " + k);
 
 				}
 
-				System.out.println(
-						"Inside Parentheses: " + inside.substring(1, inside.length() - 1) + " Entering Recursion");
+				/*
+				 * System.out.println( "Inside Parentheses: " + inside.substring(1,
+				 * inside.length() - 1) + " Entering Recursion");
+				 */
 				Float in = evaluate(inside.substring(1, inside.length() - 1), vars, arrays);
-				System.out.println("Exited Recursion (Val: " + in + ")");
+				// System.out.println("Exited Recursion (Val: " + in + ")");
 				tmp = in + "";
-				System.out.println("tmp (in): " + tmp);
+				// System.out.println("tmp (in): " + tmp);
 			} else if (cur == '/' || cur == '*' || cur == '+' || cur == '-') {
-
 				if (isNumeric(tmp) == true) {
 					operands.push(Float.parseFloat(tmp));
-					System.out.println(operands.peek());
+					// System.out.println(operands.peek());
 					tmp = "";
 				} else if (isNumeric(tmp) == false) {
-					System.out.println("tmp (isNumeric-false) : " + tmp);
+					// System.out.println("tmp (isNumeric-false) : " + tmp);
 					operands.push((float) vars.get(vars.indexOf(new Variable(tmp))).value);
-					System.out.println(operands.peek());
+					// System.out.println(operands.peek());
 					tmp = "";
 				}
-				System.out.println("Operands Size: " + operands.size() + " | Operators Peek: ");
+				// System.out.println("Operands Size: " + operands.size() + " | Operators Peek:
+				// ");
 
-				if (operators.size() > 0)
-					System.out.print(operators.peek());
-				else
-					System.out.print("Empty Stack \n");
+				/*
+				 * if (operators.size() > 0) System.out.print(operators.peek()); else
+				 * System.out.print("Empty Stack \n");
+				 */
 
 				if (operands.size() > 1 && operators.size() > 0) {
 
@@ -190,14 +190,16 @@ public class Expression {
 						float first = operands.pop();
 
 						operands.push(first * second);
-						System.out.println("multiplied: " + first + " and " + second + ": pushed: " + operands.peek());
+						// System.out.println("multiplied: " + first + " and " + second + ": pushed: " +
+						// operands.peek());
 						operators.pop();
 					} else if (operators.peek() == '/') {
 						float second = operands.pop();
 						float first = operands.pop();
 
 						operands.push(first / second);
-						System.out.println("divided: " + first + " and " + second + ": pushed: " + operands.peek());
+						// System.out.println("divided: " + first + " and " + second + ": pushed: " +
+						// operands.peek());
 						operators.pop();
 					}
 				}
@@ -205,8 +207,8 @@ public class Expression {
 				operators.push(cur);
 
 			}
-			System.out.println("k: " + k);
-			System.out.println("tmp: " + tmp + "\n");
+			// System.out.println("k: " + k);
+			// System.out.println("tmp: " + tmp + "\n");
 
 		}
 
@@ -214,9 +216,9 @@ public class Expression {
 			operands.push(Float.parseFloat(tmp));
 			tmp = "";
 		} else if (isNumeric(tmp) == false) {
-			System.out.println("tmp (isNumeric-false) : " + tmp);
+			// System.out.println("tmp (isNumeric-false) : " + tmp);
 			operands.push((float) vars.get(vars.indexOf(new Variable(tmp))).value);
-			System.out.println(operands.peek());
+			// System.out.println(operands.peek());
 			tmp = "";
 		}
 
@@ -227,14 +229,16 @@ public class Expression {
 				float first = operands.pop();
 
 				operands.push(first * second);
-				System.out.println("multiplied: " + first + " and " + second + ": pushed: " + operands.peek());
+				// System.out.println("multiplied: " + first + " and " + second + ": pushed: " +
+				// operands.peek());
 				operators.pop();
 			} else if (operators.peek() == '/') {
 				float second = operands.pop();
 				float first = operands.pop();
 
 				operands.push(first / second);
-				System.out.println("divided: " + first + " and " + second + ": pushed: " + operands.peek());
+				// System.out.println("divided: " + first + " and " + second + ": pushed: " +
+				// operands.peek());
 				operators.pop();
 			}
 		}
@@ -243,18 +247,18 @@ public class Expression {
 		Stack<Character> operatorsR = new Stack<Character>();
 
 		int max = operators.size();
-		System.out.println("Operators Size: " + max);
+		// System.out.println("Operators Size: " + max);
 		for (int k = 0; k < max; k++) {
 			operatorsR.push(operators.pop());
-			System.out.println("OperatorsR Pushed: " + operatorsR.peek());
+			// System.out.println("OperatorsR Pushed: " + operatorsR.peek());
 		}
-		System.out.println("Operands Size : " + operands.size());
+		// System.out.println("Operands Size : " + operands.size());
 
 		max = operands.size();
 
 		for (int k = 0; k < max; k++) {
 			operandsR.push(operands.pop());
-			System.out.println("OperandsR Pushed: " + operandsR.peek());
+			// System.out.println("OperandsR Pushed: " + operandsR.peek());
 		}
 
 		while (operatorsR.size() > 0) {
@@ -278,7 +282,6 @@ public class Expression {
 
 		if (expr == null)
 			return false;
-
 		try {
 			Float.parseFloat(expr);
 		} catch (NumberFormatException exception) {

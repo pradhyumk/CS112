@@ -1,0 +1,90 @@
+
+Enter the expression, or hit return to quit => 255
+Enter variable values file name, or hit return if no variables => 
+Value of expression = 255.0
+
+Enter the expression, or hit return to quit => 3+47
+Enter variable values file name, or hit return if no variables => 
+Value of expression = 50.0
+
+Enter the expression, or hit return to quit => 13-4-12
+Enter variable values file name, or hit return if no variables => 
+Value of expression = -3.0
+
+Enter the expression, or hit return to quit => 150+14*15
+Enter variable values file name, or hit return if no variables => 
+Value of expression = 360.0
+
+Enter the expression, or hit return to quit => x
+Enter variable values file name, or hit return if no variables => etest3.txt
+Value of expression = 3.0
+
+Enter the expression, or hit return to quit => p/y
+Enter variable values file name, or hit return if no variables => etest3.txt
+Value of expression = 0.5
+
+Enter the expression, or hit return to quit => p-x+y
+Enter variable values file name, or hit return if no variables => etest3.txt
+Value of expression = 3.0
+
+Enter the expression, or hit return to quit => p-x*z/p+y-4
+Enter variable values file name, or hit return if no variables => etest3.txt
+Value of expression = -10.0
+
+Enter the expression, or hit return to quit => (p)
+Enter variable values file name, or hit return if no variables => etest3.txt
+Value of expression = 2.0
+
+Enter the expression, or hit return to quit => p-(x-y)
+Enter variable values file name, or hit return if no variables => etest3.txt
+Value of expression = 3.0
+
+Enter the expression, or hit return to quit => p-((x-y))
+Enter variable values file name, or hit return if no variables => etest3.txt
+Value of expression = 3.0
+
+Enter the expression, or hit return to quit => p-(x-y)*(2-z)+y
+Enter variable values file name, or hit return if no variables => etest3.txt
+Value of expression = 0.0
+
+Enter the expression, or hit return to quit => C[1]
+Enter variable values file name, or hit return if no variables => etest3.txt
+Value of expression = 1.0
+
+Enter the expression, or hit return to quit => C[x-2]
+Enter variable values file name, or hit return if no variables => etest3.txt
+Value of expression = 1.0
+
+Enter the expression, or hit return to quit => C[(z-y)]
+Enter variable values file name, or hit return if no variables => etest3.txt
+Value of expression = 4.0
+
+Enter the expression, or hit return to quit => C[3]+D[4]
+Enter variable values file name, or hit return if no variables => etest3.txt
+Value of expression = 7.0
+
+Enter the expression, or hit return to quit => C[D[0]]
+Enter variable values file name, or hit return if no variables => etest3.txt
+Value of expression = 0.0
+
+Enter the expression, or hit return to quit => z*(y-D[p+ARRY[1]-C[1]+x])
+Enter variable values file name, or hit return if no variables => etest3.txt
+Value of expression = -8.0
+
+Enter the expression, or hit return to quit => C[D[ARRY[2]*2]]/2
+Enter variable values file name, or hit return if no variables => etest3.txt
+Value of expression = 2.0
+
+Enter the expression, or hit return to quit => 
+
+/*
+etest3.txt:
+
+p 2
+x 3
+y 4
+z 8
+C 5 (1,1) (2,2) (3,3) (4,4)
+D 6 (1,1) (3,3) (4,4) (5,5)
+ARRY 3 (1,1) (2,2)
+*/
