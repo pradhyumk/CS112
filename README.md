@@ -13,9 +13,9 @@ Graded: 24 February 2020 (Passes all tests)
 ## Program 2: Expression Evaluation
 Objective: To complete the `makeVariableLists` and `evaluate` methods within the provided `Expression.java` file.
 
-Assigned: 21 February 2020
-Due: 11 March 2020
-Graded: 09 March 2020 (Passes all tests)
+Assigned: 21 February 2020  
+Due: 11 March 2020  
+Graded: 09 March 2020 (Passes all tests)  
 
 ## Original Assignment Authors
 Rutgers University Computer Science Dept.  
