@@ -4,7 +4,7 @@
 Usage of this repository is subject to the Rutgers DCS Academic Integrity Policy for Programming Assignments which can be found [here](https://www.cs.rutgers.edu/academics/undergraduate/academic-integrity-policy/programming-assignments).
 
 ## Program 1: Polynomial
-Objective: To complete the add, multiply, and evaluate methods within the provided `polynomial.java` file.
+Objective: To complete the add, multiply, and evaluate methods within the provided `Polynomial.java` file.
 
 Assigned: 04 February 2020  
 Due: 19 February 2020  
@@ -16,6 +16,13 @@ Objective: To complete the `makeVariableLists` and `evaluate` methods within the
 Assigned: 21 February 2020  
 Due: 11 March 2020  
 Graded: 09 March 2020 (Passes all tests)  
+
+## Program 3: Trie
+Objective: To complete the `buildTrie` and `completionList` methods within the provided `Trie.java` file
+
+Assigned: 13 March 2020  
+Due: 03 April 2020  
+Graded: ?  
 
 ## Original Assignment Authors
 Rutgers University Computer Science Dept.  
