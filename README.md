@@ -22,11 +22,11 @@ Objective: To complete the `buildTrie` and `completionList` methods within the p
 
 Assigned: 13 March 2020  
 Due: 03 April 2020  
-Graded: ?  
+Graded: 06 April 2020  
 
 ## Original Assignment Authors
 Rutgers University Computer Science Dept.  
-Course Coordinator - Sesh Venugopal
+Course Coordinator - Seshadri Venugopal
 
 ## Method Credits
 © MicroTechTon Media // Pradhyum Krishnan
