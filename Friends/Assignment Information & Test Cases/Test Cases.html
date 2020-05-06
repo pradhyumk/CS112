@@ -1,0 +1,101 @@
+
+<!-- saved from url=(0105)https://www.cs.rutgers.edu/courses/112/classes/spring_2020_venugopal/progs/prog5/testcases/testcases.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<title>
+CS112 Spring 2020: Programming Assignment 5 - Friendship Graph Algorithms Test Cases
+</title>
+<style>
+body { font: 14px Trebuchet MS, Verdana, Arial, Helvetica, sans-serif; }
+div.code { background: lightgrey; width: 40%;}
+table { border-collapse: collapse; cellspacing: 0px; margin-left: 10%;}
+th { font: bold 14px Trebuchet MS; border-bottom: 1px solid black; padding: 10px; text-align:left;}
+td { padding: 2px; font: 13px Trebuchet MS; align:left; padding-right: 10px; }
+td.pts { text-align: right; padding-right: 20px; vertical-align: top;}
+tt { color: blue; font-size: 16px;}
+a, a:visited { color: blue; }
+pre { color: brown; }
+</style>
+</head><body data-gr-c-s-loaded="true"><center>
+<h2>Programming Assignment 5 - Friendship Graph Algorithms</h2>
+<h2>Test Cases</h2>
+<hr>
+</center>
+<ul>
+<li><tt>shortestChain: 35 pts</tt>
+<p>
+</p><ol>
+<li>3 pts: file <a href="https://www.cs.rutgers.edu/courses/112/classes/spring_2020_venugopal/progs/prog5/testcases/sptest1.txt">sptest1.txt</a>
+<br>Input: aparna, kaitlin
+<br>Result: Empty
+<p></p></li><li>4 pts: file <a href="https://www.cs.rutgers.edu/courses/112/classes/spring_2020_venugopal/progs/prog5/testcases/subtest3.txt">subtest3.txt</a> 
+<br>Input: kaitlin, nick
+<br>Result: [kaitlin,nick]
+<p></p></li><li>7 pts: file <a href="https://www.cs.rutgers.edu/courses/112/classes/spring_2020_venugopal/progs/prog5/testcases/assnsample.txt">assnsample.txt</a> 
+<br>Input: nick, aparna
+<br>Result: [nick,ricardo,aparna]
+<p></p></li><li>7 pts: file <a href="https://www.cs.rutgers.edu/courses/112/classes/spring_2020_venugopal/progs/prog5/testcases/sptest4.txt">sptest4.txt</a>
+<br>Input: p1, p50
+<br>Result: [p1,p49,p50] OR [p1,p51,p50]
+<p></p></li><li>7 pts: file <a href="https://www.cs.rutgers.edu/courses/112/classes/spring_2020_venugopal/progs/prog5/testcases/subtest5.txt">subtest5.txt</a>
+<br>Input: p1, p10
+<br>Result: [p1,p2,p3,p4,p5,p6,p7,p8,p9,p10]
+<p></p></li><li>7 pts: file <a href="https://www.cs.rutgers.edu/courses/112/classes/spring_2020_venugopal/progs/prog5/testcases/subtest5.txt">subtest5.txt</a>
+<br>Input: p301, p198
+<br>Result: [p301,p100,p99,p98,p198]
+</li></ol>
+<p>
+</p></li><li><tt>cliques: 25 pts</tt>
+<p>Note: For the non-empty results, order of names within
+a list does not matter. <br>So any
+permutation of the results given here would be fine. <br>
+(This includes
+a different order of lists within the top level list, as well.]
+</p><p>
+</p><ol>
+<li>2 pt: file <a href="https://www.cs.rutgers.edu/courses/112/classes/spring_2020_venugopal/progs/prog5/testcases/subtest1_2.txt">subtest1_2.txt</a>
+<br>Input: cornell
+<br>Result: Empty
+<p></p></li><li>3 pt: file <a href="https://www.cs.rutgers.edu/courses/112/classes/spring_2020_venugopal/progs/prog5/testcases/subtest1_2.txt">subtest1_2.txt</a>
+<br>Input: rutgers
+<br>Result: [[kaitlin]]
+<p></p></li><li>5 pts: file <a href="https://www.cs.rutgers.edu/courses/112/classes/spring_2020_venugopal/progs/prog5/testcases/subtest3.txt">subtest3.txt</a> 
+<br>Input: rutgers
+<br>Result: [[sara],[kaitlin]]
+<p></p></li><li>5 pts: file <a href="https://www.cs.rutgers.edu/courses/112/classes/spring_2020_venugopal/progs/prog5/testcases/clqtest4.txt">clqtest4.txt</a>
+<br>Input: rutgers
+<br>Result: [[p1,p2,p3,p4]]
+<p></p></li><li>5 pt: file <a href="https://www.cs.rutgers.edu/courses/112/classes/spring_2020_venugopal/progs/prog5/testcases/assnsample.txt">assnsample.txt</a>
+<br>Input: rutgers
+<br>Result: [[sam,jane,bob,kaitlin],[sergei,aparna]]
+<p></p></li><li>5 pt: file <a href="https://www.cs.rutgers.edu/courses/112/classes/spring_2020_venugopal/progs/prog5/testcases/subtest5.txt">subtest5.txt</a>
+<br>Input: rutgers
+<br>Result: [[p3,p104,p4,p204],[p98,p199,p99,p299]]
+</li></ol>
+<p>
+</p></li><li><tt>connectors: 40 pts</tt>
+<p>Note: For the non-empty results, order of names within
+a list does not matter. <br>So any
+permutation of the results for #5 and #6 given here would be fine. <br>
+</p><p>
+</p><ol>
+<li>4 pts: file <a href="https://www.cs.rutgers.edu/courses/112/classes/spring_2020_venugopal/progs/prog5/testcases/subtest1_2.txt">subtest1_2.txt</a>
+<br>Result: Empty
+<p></p></li><li>4 pts: file <a href="https://www.cs.rutgers.edu/courses/112/classes/spring_2020_venugopal/progs/prog5/testcases/clqtest4.txt">clqtest4.txt</a>
+<br>Result: Empty
+<p></p></li><li>8 pts: file <a href="https://www.cs.rutgers.edu/courses/112/classes/spring_2020_venugopal/progs/prog5/testcases/subtest3.txt">subtest3.txt</a>
+<br>Result: [nick]
+<p></p></li><li>8 pts: file <a href="https://www.cs.rutgers.edu/courses/112/classes/spring_2020_venugopal/progs/prog5/testcases/subtest4.txt">subtest4.txt</a>
+<br>Result: [p1]
+<p></p></li><li>8 pts: file <a href="https://www.cs.rutgers.edu/courses/112/classes/spring_2020_venugopal/progs/prog5/testcases/assnsample.txt">assnsample.txt</a>
+<br>Result: [jane, aparna, nick, tom, michele]
+<p></p></li><li>8 pts: file <a href="https://www.cs.rutgers.edu/courses/112/classes/spring_2020_venugopal/progs/prog5/testcases/conntest6.txt">conntest6.txt</a>
+<br>Result: [p2,p3,p4]
+</li></ol>
+</li></ul>
+
+
+
+    
+</body></html>
