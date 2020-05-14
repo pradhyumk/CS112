@@ -1,3 +1,5 @@
+// This program may not have received a 100%.
+
 package lse;
 
 import java.io.*;
@@ -34,7 +36,7 @@ public class LittleSearchEngine {
 	 * Scans a document, and loads all keywords found into a hash table of keyword
 	 * occurrences in the document. Uses the getKeyWord method to separate keywords
 	 * from other words.
-	 * 
+	 *
 	 * @param docFile Name of the document file to be scanned and loaded
 	 * @return Hash table of keywords in the given document, each associated with an
 	 *         Occurrence object
@@ -74,7 +76,7 @@ public class LittleSearchEngine {
 	 * inserted in the correct place (according to descending order of frequency) in
 	 * the same keyword's Occurrence list in the master hash table. This is done by
 	 * calling the insertLastOccurrence method.
-	 * 
+	 *
 	 * @param kws Keywords hash table for a document
 	 */
 	public void mergeKeywords(HashMap<String, Occurrence> kws) {
@@ -100,16 +102,16 @@ public class LittleSearchEngine {
 	 * otherwise returns null. A keyword is any word that, after being stripped of
 	 * any trailing punctuation(s), consists only of alphabetic letters, and is not
 	 * a noise word. All words are treated in a case-INsensitive manner.
-	 * 
+	 *
 	 * Punctuation characters are the following: '.', ',', '?', ':', ';' and '!' NO
 	 * OTHER CHARACTER SHOULD COUNT AS PUNCTUATION
-	 * 
+	 *
 	 * If a word has multiple trailing punctuation characters, they must all be
 	 * stripped So "word!!" will become "word", and "word?!?!" will also become
 	 * "word"
-	 * 
+	 *
 	 * See assignment description for examples
-	 * 
+	 *
 	 * @param word Candidate word
 	 * @return Keyword (word without trailing punctuation, LOWER CASE)
 	 */
@@ -148,7 +150,7 @@ public class LittleSearchEngine {
 	 * elements 0..n-2 in the list are already in the correct order. Insertion is
 	 * done by first finding the correct spot using binary search, then inserting at
 	 * that spot.
-	 * 
+	 *
 	 * @param occs List of Occurrences
 	 * @return Sequence of mid point indexes in the input list checked by the binary
 	 *         search process, null if the size of the input list is 1. This
@@ -198,7 +200,7 @@ public class LittleSearchEngine {
 	 * method is done, the keywordsIndex hash table will be filled with all
 	 * keywords, each of which is associated with an array list of Occurrence
 	 * objects, arranged in decreasing frequencies of occurrence.
-	 * 
+	 *
 	 * @param docsFile       Name of file that has a list of all the document file
 	 *                       names, one name per line
 	 * @param noiseWordsFile Name of file that has a list of noise words, one noise
@@ -228,18 +230,18 @@ public class LittleSearchEngine {
 	 * Search result for "kw1 or kw2". A document is in the result set if kw1 or kw2
 	 * occurs in that document. Result set is arranged in descending order of
 	 * document frequencies.
-	 * 
+	 *
 	 * Note that a matching document will only appear once in the result.
-	 * 
+	 *
 	 * Ties in frequency values are broken in favor of the first keyword. That is,
 	 * if kw1 is in doc1 with frequency f1, and kw2 is in doc2 also with the same
 	 * frequency f1, then doc1 will take precedence over doc2 in the result.
-	 * 
+	 *
 	 * The result set is limited to 5 entries. If there are no matches at all,
 	 * result is null.
-	 * 
+	 *
 	 * See assignment description for examples
-	 * 
+	 *
 	 * @param kw1 First keyword
 	 * @param kw1 Second keyword
 	 * @return List of documents in which either kw1 or kw2 occurs, arranged in
