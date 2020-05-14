@@ -1,10 +1,12 @@
+// This program may or may not be a 100%
+
 package trie;
 
 import java.util.ArrayList;
 
 /**
  * This class implements a Trie.
- * 
+ *
  * @author Sesh Venugopal
  *
  */
@@ -18,7 +20,7 @@ public class Trie {
 	 * Builds a trie by inserting all words in the input array, one at a time, in
 	 * sequence FROM FIRST TO LAST. (The sequence is IMPORTANT!) The words in the
 	 * input array are all lower case.
-	 * 
+	 *
 	 * @param allWords Input array of words (lowercase) to be inserted.
 	 * @return Root of trie with all words inserted from the input array
 	 */
@@ -125,7 +127,7 @@ public class Trie {
 				else if (ptr.firstChild != null)
 					ret.addAll(completionList(ptr.firstChild, allWords, prefix));
 			}
-			
+
 		}
 		return (ret.isEmpty()) ? null : ret;
 	}
