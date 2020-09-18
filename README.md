@@ -1,3 +1,6 @@
+[![HitCount](http://hits.dwyl.com/pradhyumk/cs112.svg)](http://hits.dwyl.com/pradhyumk/cs112)  
+
+
 # Rutgers CS112 Programs
 *Programs in the repository may contain anti-cheat which could be used to identify potentially plagiarized work*
 
