@@ -42,4 +42,4 @@ Course Coordinator - [Seshadri Venugopal](mailto:venugopa@cs.rutgers.edu)
 *If the Rutgers University Dept. of Computer Science would like to take down this repository, you may create an issue and this repository will become private.*
 
 ## Method Credits
-© MicroTechTon Media // Pradhyum Krishnan
+© Pradhyum Krishnan
