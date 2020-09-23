@@ -3,6 +3,8 @@
 # Rutgers CS112 Programs
 *Programs in the repository may contain anti-cheat which could be used to identify potentially plagiarized work*
 
+This repository contains assignments, problem sets and online examinations from the Spring 2020 semester.
+
 Usage of this repository is subject to the Rutgers DCS Academic Integrity Policy for Programming Assignments which can be found [here](https://www.cs.rutgers.edu/academics/undergraduate/academic-integrity-policy/programming-assignments).
 
 ## Program 1: Polynomial
